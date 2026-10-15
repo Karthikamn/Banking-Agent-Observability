@@ -1,0 +1,9 @@
+session_id,trace_id,span_id,operation,duration_ms,status,http_status,error
+sess-demo-001,trace-demo-001,sp-001,Customer Profile API,65,OK,200,
+sess-demo-001,trace-demo-001,sp-002,Loan Status API,80,OK,200,
+sess-demo-001,trace-demo-001,sp-003,KYC Verification API,70,OK,200,
+sess-demo-001,trace-demo-001,sp-004,Risk Assessment API,90,OK,200,
+sess-demo-002,trace-demo-002,sp-007,KYC Verification API,600,ERROR,504,Simulated KYC timeout
+sess-demo-003,trace-demo-003,sp-008,Loan Status API,410,ERROR,500,Simulated upstream service error
+sess-demo-004,trace-demo-004,sp-009,Customer Profile API,55,ERROR,200,ValidationError: customer profile missing
+sess-demo-005,trace-demo-005,sp-010,Agent response quality check,35,ERROR,200,Answer omits loan/KYC status

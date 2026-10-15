@@ -1,0 +1,62 @@
+[
+  {
+    "session_id": "sess-demo-001",
+    "trace_id": "trace-demo-001",
+    "scenario": "healthy",
+    "status": "SUCCESS",
+    "duration_ms": 305,
+    "customer_ref": "CUST-1001",
+    "loan_ref": "LOAN-2001",
+    "failure_category": "",
+    "started_at": "2026-10-14T09:10:00Z",
+    "answer": "Home Loan status UNDER_REVIEW; KYC VERIFIED"
+  },
+  {
+    "session_id": "sess-demo-002",
+    "trace_id": "trace-demo-002",
+    "scenario": "api_timeout",
+    "status": "FAILED",
+    "duration_ms": 820,
+    "customer_ref": "CUST-1002",
+    "loan_ref": "LOAN-2002",
+    "failure_category": "API_TIMEOUT",
+    "started_at": "2026-10-14T09:15:00Z",
+    "answer": "Could not fully verify details"
+  },
+  {
+    "session_id": "sess-demo-003",
+    "trace_id": "trace-demo-003",
+    "scenario": "api_500",
+    "status": "FAILED",
+    "duration_ms": 650,
+    "customer_ref": "CUST-1001",
+    "loan_ref": "LOAN-2001",
+    "failure_category": "API_ERROR_5XX",
+    "started_at": "2026-10-14T09:20:00Z",
+    "answer": "Could not fully verify details"
+  },
+  {
+    "session_id": "sess-demo-004",
+    "trace_id": "trace-demo-004",
+    "scenario": "invalid_response",
+    "status": "FAILED",
+    "duration_ms": 390,
+    "customer_ref": "CUST-1002",
+    "loan_ref": "LOAN-2002",
+    "failure_category": "VALIDATION_FAILURE",
+    "started_at": "2026-10-14T09:25:00Z",
+    "answer": "Could not fully verify details"
+  },
+  {
+    "session_id": "sess-demo-005",
+    "trace_id": "trace-demo-005",
+    "scenario": "quality_regression",
+    "status": "DEGRADED",
+    "duration_ms": 480,
+    "customer_ref": "CUST-1001",
+    "loan_ref": "LOAN-2001",
+    "failure_category": "QUALITY_REGRESSION",
+    "started_at": "2026-10-14T09:30:00Z",
+    "answer": "Your request is complete."
+  }
+]

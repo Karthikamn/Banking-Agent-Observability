@@ -1,0 +1,1 @@
+fastapi>=0.110\nuvicorn[standard]>=0.27\nstreamlit>=1.32\nplotly>=5.18\npandas>=2.1\npsycopg[binary]>=3.1\nopentelemetry-api>=1.23\nopentelemetry-sdk>=1.23\nrequests>=2.31\npytest>=8.0\n
